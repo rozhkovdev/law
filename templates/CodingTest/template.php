@@ -2,16 +2,12 @@
     <?php echo $this->Document->names($plaintiffs, 5, 'Plaintiff') ?>
     <?php echo $this->Document->choice($plaintiffs, ' brings ', ' bring '); ?> this action seeking to enforce
     <?php echo $this->Document->choice($plaintiffs, 'Plaintiff’s', 'their'); ?>
-    right to privacy under the consumer-privacy provisions of the Telephone Consumer Protection Act
-    (“TCPA”), 47 U.S.C. § 227.
+    right to privacy under the consumer-privacy provisions of the Telephone Consumer Protection Act (“TCPA”), 47 U.S.C. § 227.
 
     <?php echo $this->Document->names($defendants, 5, 'Defendant') ?> violated the TCPA by using an automated dialing system, or “ATDS”,
     to send telemarketing text messages to <?php echo $this->Document->choice($plaintiffs, 'Plaintiff’s ', 'Plaintiffs’')?>
-    cellular telephone
-    <?php echo $this->Document->choice($plaintiffs, 'number', 'numbers'); ?>
-    for the purposes
-    of advertising
-    <?php echo $this->Document->choice($defendants, 'its', 'their'); ?>
+    cellular telephone <?php echo $this->Document->choice($plaintiffs, 'number', 'numbers'); ?>
+    for the purposes of advertising <?php echo $this->Document->choice($defendants, 'its', 'their'); ?>
     goods and services.
 
     <?php if($dncrViolation):?>
